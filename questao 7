@@ -1,0 +1,12 @@
+function modulo7Resposta () {
+    try {
+      if (Math.random() > 0.5) {
+        throw new Error("Algum erro")
+        return 
+      }
+    } catch (e) {
+      console.log(e.message)
+    } finally {
+      console.log("Vai ser executado independente de tudo")
+    }
+  }
